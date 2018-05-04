@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=5">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>match-match-game</title>
+    <link rel="stylesheet" href="sources/css/fonts.css">
+    <link rel="stylesheet" href="sources/css/lightsaber.css">
+    <link rel="stylesheet" href="sources/css/style.css">
+</head>
+
+<body>
+    <h1>STAR WARS</h1>
+    <section>
+        <div class="welcome-page">
+            <h2>match match <span>game</span></h2>
+            <p>The player turns over two cards, one at a time. The cards are kept in position. If the cards do not match, the
+                player turns the cards face-down. Play continues until all the cards have been picked up. You should watch
+                carefully and remember where cards are located. Then, when you turn over your first card, you may remember
+                where to find a matching card.
+                </br>
+                Just have fun!
+            </p>
+            <div class="next-page">
+                <button class="next-page__button">Click to play</button>
+            </div>
+        </div>
+        <div id='choose_the_side' class="is-hidden">
+            <h3>Choose your side</h3>
+            <div class="sides">
+                <div class="sides-variants">
+                    <div class="lightsaber">
+                        <label for="yoda_lightsaber"></label>
+                        <input type="radio" id="yoda_lightsaber" name="lightsaber">
+                        <div class="switch"></div>
+                        <div class="plasma yoda"></div>
+                    </div>
+                </div>
+                <div class="back-preview back--light-side"></div>
+                <div class="sides-variants">
+                    <div class="lightsaber">
+                        <label for="darth_vader_lightsaber"></label>
+                        <input type="radio" id="darth_vader_lightsaber" name="lightsaber">
+                        <div class="switch"></div>
+                        <div class="plasma vader"></div>
+                    </div>
+                </div>
+            </div>
+            <h3>Choose the difficulty</h3>
+            <div class="difficulty-panel js-difficulty-panel--light-side">
+                <button class="difficulty-panel__button">Droid</button>
+                <button class="difficulty-panel__button">Stormtrooper</button>
+                <button class="difficulty-panel__button">Sith</button>
+            </div>
+            <div class="difficulty-panel js-difficulty-panel--dark-side is-hidden">
+                <button class="difficulty-panel__button">Soldier</button>
+                <button class="difficulty-panel__button">Clone</button>
+                <button class="difficulty-panel__button">Jedi</button>
+            </div>
+        </div>
+        <aside></aside>
+        <div id="memory_board">
+        </div>
+        <div id='congratulation' class="is-hidden">
+          <h3>Congratulation!</h3>
+             <p>You just won in the game without loss!</p>
+        </div>
+    </section>
+    <footer>
+        <a href="https://vk.com/agnostic_o_o">Made by Yauheni</a>
+    </footer>
+    <!-- <script src="sources/js/timer.js"></script> -->
+    <script src="sources/js/main.js"></script>
+</body>
+
+</html>

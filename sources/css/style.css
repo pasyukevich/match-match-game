@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    user-select: none;
+    cursor: default;
+}
+
+aside{
+    position: absolute;
+    right: 40px;
+    width: 170px;
+    height: 60px;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 900px;
+    min-height: 560px;
+    max-height: 900px
+}
+
+#timer {
+    font-family: "digital-7";
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+}
+
+h1 {
+    width: 100%;
+    height: 100%;
+    font-family: "STARWARS";
+    text-align: center;
+    font-size: 106px;
+    margin: 0;
+}
+
+
+h2 {
+    font-family: "STARWARS";
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 0 0 10px;
+}
+
+h2 span{
+    display: block;
+}
+
+p {
+    font-family: "STARWARS";
+    text-align: center;
+    font-size: 25px;
+    color: rgb(84, 110, 122);
+}
+
+h3 {
+    font-family: "STARWARS";
+    text-align: center;
+    font-size: 25px;
+    color: rgb(38, 50, 56);
+}
+
+.back-preview{
+    align-self: center;
+    width: 144px;
+    height: 144px;
+}
+
+.difficulty-panel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.difficulty-panel__button {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    position: relative;
+    height: 60px;
+    width: 252px;
+    ;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+.difficulty-panel__button:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.difficulty-panel__button:before,
+.difficulty-panel__button:after {
+    background: rgb(0, 0, 0);
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    transition: 400ms ease all;
+}
+
+.difficulty-panel__button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.difficulty-panel__button:hover:before,
+.difficulty-panel__button:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "STARWARS";
+    font-size: 30px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.next-page {
+    display: flex;
+    justify-content: center;
+}
+
+.next-page__button {
+    transform-style: preserve-3d;
+    border: none;
+    background: rgb(70, 102, 201);
+    color: rgb(242, 242, 242);
+    padding: 10px;
+    font-size: 74px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    transition: all 500ms ease;
+    width: 800px;
+}
+
+.next-page__button:after {
+    top: -100%;
+    left: 0px;
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    background: rgb(161, 1, 1);
+    border-radius: 5px;
+    content: 'Make the choise';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+
+.next-page__button:hover {
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(100%);
+}
+
+.is-disappear {
+    position: relative;
+    animation: disappear 1s linear;
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+#memory_board {
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 4000px;
+    margin: 0 auto;
+}
+
+.wrapper_item div {
+    margin: 0;
+    display: block;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    width: 125px;
+    height: 144px;
+    background: url(../images/characters.png) no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    transform: rotateY( 180deg);
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+}
+
+.back--dark-side {
+    background: url(../images/vaider.png) no-repeat;
+    background-size: contain;
+}
+
+.back--light-side {
+    background: url(../images/yoda.png) no-repeat;
+    background-size: contain;
+}
+
+.wrapper_item {
+    background-color: rgb(255, 249, 196);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    margin: 3px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    width: 144px;
+    height: 144px;
+}
+
+.flipped {
+    transform: rotateY( 180deg);
+}
+
+.is-hidden {
+    display: none;
+}

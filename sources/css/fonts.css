@@ -1,0 +1,38 @@
+@font-face{
+    
+    font-family: 'STARWARS';
+    
+    src: url('../fonts/STARWARS.eot');
+    
+    src: url('../fonts/STARWARS.eot?iefix') format('eot'),
+    
+    url('../fonts/STARWARS.woff') format('woff'),
+    
+    url('../fonts/STARWARS.ttf') format('truetype'),
+    
+    url('../fonts/STARWARS.svg#webfont') format('svg');
+    
+    font-weight: normal;
+    
+    font-style: normal;
+    
+    }
+@font-face{
+        
+        font-family: 'digital-7';
+        
+        src: url('../fonts/digital-7.eot');
+        
+        src: url('../fonts/digital-7.eot?iefix') format('eot'),
+        
+        url('../fonts/digital-7.woff') format('woff'),
+        
+        url('../fonts/digital-7.ttf') format('truetype'),
+        
+        url('../fonts/digital-7.svg#webfont') format('svg');
+        
+        font-weight: normal;
+        
+        font-style: normal;
+        
+        }
